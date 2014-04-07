@@ -1,3 +1,8 @@
+/*****************************************************************************
+This query show the outcome of two Eephus pitches thrown by Bruce Chen at
+Bryce Harper.
+*****************************************************************************/
+
 SELECT atbats.ab_id, 
 	atbats.batter, 
     players.eliasid,
