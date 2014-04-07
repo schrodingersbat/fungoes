@@ -1,8 +1,12 @@
+/***
+This is a simple query that joins on pitch_types, atbats and players to reveal
+non-coordinate Pitch f/x data on all Jeff Samardzija pitches.
+***/
 select 
 pitches.pitch_id,
 pitches.ab_id,
 CONCAT(players.first, " ", players.last) as batter,
-pitch_types.id,
+#pitch_types.id,
 pitches.pitch_type,
 pitch_types.pitch,
 pitches.start_speed,
