@@ -2,9 +2,9 @@
 This is a simple query that joins on pitch_types, atbats and players to reveal
 non-coordinate Pitch f/x data on all Jeff Samardzija pitches.
 ***/
-select 
-games.game_id,
+select
 games.date,
+games.game_id,
 pitches.pitch_id,
 pitches.ab_id,
 CONCAT(players.first, " ", players.last) as batter,
