@@ -4,6 +4,7 @@ non-coordinate Pitch f/x data on all Jeff Samardzija pitches.
 ***/
 select 
 games.game_id,
+games.date,
 pitches.pitch_id,
 pitches.ab_id,
 CONCAT(players.first, " ", players.last) as batter,
